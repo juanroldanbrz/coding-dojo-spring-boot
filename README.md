@@ -26,8 +26,8 @@ DB Scripts and migration strategy
 ---
 I am not using liquibase or other migration tool due lack of time, but it would be a nice plus.
 
-I did move the creation scripts to the sq/create folder, so we can divide them from the update scripts
-in the future.
+I did move the creation scripts to the `sq/create folder` so at least we can separate the update
+scripts from the creation scripts.
 
 Running the service
 --- 
