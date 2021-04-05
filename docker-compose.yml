@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres:9.1
+    restart: always
+    ports:
+    - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./src/main/resources/sql/create/schema.sql:/docker-entrypoint-initdb.d/init.sql
