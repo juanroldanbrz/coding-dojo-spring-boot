@@ -31,7 +31,7 @@ public class WeatherEntity {
   @Column(name = "country")
   private String country;
 
-  @Column(name = "temperature", columnDefinition = "NUMERIC", length = 8)
+  @Column(name = "temperature", columnDefinition = "NUMERIC")
   private Double temperature;
 
   @CreatedDate
